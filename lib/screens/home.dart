@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prueba_tecnica_postulacion/api/post-repository.dart';
 import 'package:prueba_tecnica_postulacion/api/post.dart';
 import 'package:prueba_tecnica_postulacion/screens/add_Post.dart';
+import 'package:prueba_tecnica_postulacion/screens/comments.dart';
 
 class HomeScreen extends StatelessWidget {
   final repo = PostRepository();
@@ -43,14 +44,23 @@ class HomeScreen extends StatelessWidget {
                   child: Card(
                     child: Column(
                       children: [
-                        ListTile(
-                          leading: CircleAvatar(
-                            child: Text(post.userId.toString()),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CommentsScreen()),
+                            );
+                          },
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              child: Text(post.userId.toString()),
+                            ),
+                            title: Text(
+                              post.title.toString(),
+                            ),
+                            subtitle: Text(post.body.toString()),
                           ),
-                          title: Text(
-                            post.title.toString(),
-                          ),
-                          subtitle: Text(post.body.toString()),
                         ),
                       ],
                     ),
