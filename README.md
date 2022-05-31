@@ -1,6 +1,13 @@
 # prueba_tecnica_postulacion
 
-Prueba tecnica postulaciòn Banco Fassil
+Prueba tecnica postulación Banco Fassil
+
+La versión es Flutter 3.0.1
+Asegurese de tener todas las librerias.
+En el terminal escribir pub get
+O dirijase al pubspec.yaml y descarguelos con el icono ⬇️
+
+Y con eso ya puede iniciar el emulador y con F5 su emulación
 
 ## Getting Started
 
