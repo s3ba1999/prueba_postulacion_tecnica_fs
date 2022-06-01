@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'comments.dart';
 
 class CommentsRepository {
-  final String postURL = 'https://jsonplaceholder.typicode.com/posts';
+  final String postURL = 'https://jsonplaceholder.typicode.com/comments';
 
   Future<List<Comments>> getComments() async {
     final comments = <Comments>[];

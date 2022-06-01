@@ -7,11 +7,11 @@ class NewPost extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Nuevo Post'),
+          title: const Text('Nuevo Post'),
         ),
         floatingActionButton: RaisedButton(
           color: Colors.indigo,
-          child: Text(
+          child: const Text(
             'Guardar',
             style: TextStyle(fontSize: 24, color: Colors.white),
           ),
@@ -21,7 +21,7 @@ class NewPost extends StatelessWidget {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Column(children: [
+            child: Column( children: const [
               TextField(
                 keyboardType: TextInputType.name,
                 decoration: InputDecoration(

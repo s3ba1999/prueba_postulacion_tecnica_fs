@@ -60,6 +60,7 @@ class HomeScreen extends StatelessWidget {
                               post.title.toString(),
                             ),
                             subtitle: Text(post.body.toString()),
+                            trailing: Icon(Icons.arrow_forward_ios_rounded),
                           ),
                         ),
                       ],
